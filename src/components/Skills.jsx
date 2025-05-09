@@ -25,24 +25,25 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="py-20 px-4 bg-yellow-100 h-screen w-screen text-center text-gray-800 font-comic"
+      className="min-h-screen w-full py-16 px-2 sm:px-4 bg-yellow-100 text-center text-gray-800 font-comic"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-5xl bangers mb-10 text-red-600 drop-shadow-[3px_3px_0_#000] tracking-wider">
+      <h2 className="text-4xl sm:text-5xl bangers mb-10 text-red-600 drop-shadow-[3px_3px_0_#000] tracking-wider">
         My Superpowers 💥
       </h2>
-      <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
+
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 max-w-6xl mx-auto">
         {skills.map((skill, idx) => (
           <motion.div
             key={idx}
-            className="bg-white border-[4px] border-black rounded-xl px-5 py-3 shadow-[4px_4px_0_#000] flex items-center gap-3 hover:scale-[1.05] transition-transform duration-200"
+            className="bg-white border-[4px] border-black rounded-xl px-4 py-3 shadow-[4px_4px_0_#000] w-[140px] sm:w-[160px] md:w-[180px] flex items-center justify-center gap-2 sm:gap-3 hover:scale-[1.05] transition-transform duration-200"
             whileHover={{ y: -4 }}
           >
-            <div className="text-2xl">{skill.icon}</div>
-            <span className="text-lg font-semibold">{skill.name}</span>
+            <div className="text-xl sm:text-2xl">{skill.icon}</div>
+            <span className="text-sm sm:text-base font-semibold">{skill.name}</span>
           </motion.div>
         ))}
       </div>

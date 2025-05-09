@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react"; // hamburger and close icon
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = ["home", "about", "projects", "skills", "contact"];
+
   return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
@@ -10,13 +16,20 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-4xl font-bold bangers text-white drop-shadow-[2px_2px_0_#000] tracking-widest">
+        <h1 className="text-3xl sm:text-4xl font-bold bangers text-white drop-shadow-[2px_2px_0_#000] tracking-widest">
           Abhishek
         </h1>
 
-        {/* Nav Links */}
-        <div className="space-x-6 flex items-center">
-          {["home", "about", "projects", "skills", "contact"].map((item) => (
+        {/* Hamburger for Mobile */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+            {isOpen ? <X size={30} /> : <Menu size={30} />}
+          </button>
+        </div>
+
+        {/* Nav Links (Desktop) */}
+        <div className="hidden md:flex space-x-6 items-center">
+          {navLinks.map((item) => (
             <a
               key={item}
               href={`#${item}`}
@@ -28,6 +41,29 @@ const Navbar = () => {
           ))}
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <motion.div
+          initial={{ height: 0 }}
+          animate={{ height: "auto" }}
+          exit={{ height: 0 }}
+          className="md:hidden bg-[#e63946] border-t border-black px-6 py-4"
+        >
+          <div className="flex flex-col space-y-4">
+            {navLinks.map((item) => (
+              <a
+                key={item}
+                href={`#${item}`}
+                onClick={() => setIsOpen(false)}
+                className="uppercase text-white font-bold text-xl hover:text-yellow-300 comic-neue"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+        </motion.div>
+      )}
     </motion.nav>
   );
 };
