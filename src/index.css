@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap');
+@import "tailwindcss";
+
+.bangers {
+  font-family: 'Bangers', cursive;
+}
+
+.comic-neue {
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.comic-border {
+  border: 8px solid black;
+  box-shadow: 8px 8px 0 black;
+}
+
+
+@layer utilities {
+  .bg-radial-burst {
+    background-image: repeating-radial-gradient(circle at center, white 0, white 2px, transparent 2px, transparent 20px);
+  }
+}
+
+
+
+.lilita {
+  font-family: 'Lilita One', cursive;
+}
+
