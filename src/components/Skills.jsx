@@ -28,7 +28,7 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="min-h-screen w-full py-16 px-2 sm:px-4 bg-yellow-100 text-center text-gray-800 font-comic"
+      className="min-h-screen w-full py-16 px-2 sm:px-4 flex items-center justify-center flex-col bg-yellow-100 text-center text-gray-800 font-comic"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
