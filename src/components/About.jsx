@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -21,25 +21,144 @@ const About = () => {
         >
           {/* Full Web Pattern */}
           {/* Outer Spider Web Circle */}
-          <circle cx="50" cy="50" r="45" stroke="#e63946" strokeWidth="1" fill="none" />
-          <circle cx="50" cy="50" r="35" stroke="#e63946" strokeWidth="1" fill="none" />
-          <circle cx="50" cy="50" r="25" stroke="#e63946" strokeWidth="1" fill="none" />
-          <circle cx="50" cy="50" r="15" stroke="#e63946" strokeWidth="1" fill="none" />
-          <circle cx="50" cy="50" r="5" stroke="#e63946" strokeWidth="1" fill="none" />
+          <circle
+            cx="50"
+            cy="50"
+            r="45"
+            stroke="#e63946"
+            strokeWidth="1"
+            fill="none"
+          />
+          <circle
+            cx="50"
+            cy="50"
+            r="35"
+            stroke="#e63946"
+            strokeWidth="1"
+            fill="none"
+          />
+          <circle
+            cx="50"
+            cy="50"
+            r="25"
+            stroke="#e63946"
+            strokeWidth="1"
+            fill="none"
+          />
+          <circle
+            cx="50"
+            cy="50"
+            r="15"
+            stroke="#e63946"
+            strokeWidth="1"
+            fill="none"
+          />
+          <circle
+            cx="50"
+            cy="50"
+            r="5"
+            stroke="#e63946"
+            strokeWidth="1"
+            fill="none"
+          />
 
           {/* Spider Web Spokes (Lines coming from the center) */}
-          <line x1="50" y1="50" x2="50" y2="0" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="50" y2="100" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="0" y2="50" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="100" y2="50" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="20" y2="20" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="80" y2="20" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="20" y2="80" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="80" y2="80" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="0" y2="20" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="100" y2="20" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="0" y2="80" stroke="#e63946" strokeWidth="1" />
-          <line x1="50" y1="50" x2="100" y2="80" stroke="#e63946" strokeWidth="1" />
+          <line
+            x1="50"
+            y1="50"
+            x2="50"
+            y2="0"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="50"
+            y2="100"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="0"
+            y2="50"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="100"
+            y2="50"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="20"
+            y2="20"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="80"
+            y2="20"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="20"
+            y2="80"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="80"
+            y2="80"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="0"
+            y2="20"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="100"
+            y2="20"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="0"
+            y2="80"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
+          <line
+            x1="50"
+            y1="50"
+            x2="100"
+            y2="80"
+            stroke="#e63946"
+            strokeWidth="1"
+          />
         </svg>
       </div>
 
@@ -61,7 +180,14 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          I'm a passionate Web Developer with a strong foundation in HTML, CSS, JavaScript, React.js, and Tailwind CSS. I completed my BCA and have built several projects showcasing modern UI and responsive design.
+          I’m a web-slinging developer with a knack for creating stunning,
+          responsive websites—no web-shooter needed! 🕷️💻 Armed with a strong
+          foundation in HTML, CSS, JavaScript, React.js, and Tailwind CSS, I
+          weave together sleek UIs that work across all devices. 💥 
+          <br />
+          I’ve swung through my BCA and built several projects that showcase my superpowers
+          in web design and development. Ready to leave my mark on the digital
+          world, one pixel at a time! 🚀🕸️
         </motion.p>
       </div>
     </motion.section>

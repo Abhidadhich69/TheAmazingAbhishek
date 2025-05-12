@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiGit,
-  SiPostman, SiShadcnui, SiMui, SiExpress, SiMongodb, SiNodedotjs, SiGithub
+  SiPostman, SiShadcnui, SiMui, SiExpress, SiMongodb, SiNodedotjs, SiGithub,
+  SiCloudinary, SiWordpress
 } from 'react-icons/si';
 
 const skills = [
@@ -19,6 +20,8 @@ const skills = [
   { name: 'Express.js', icon: <SiExpress className="text-gray-800" /> },
   { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
   { name: 'Node.js', icon: <SiNodedotjs className="text-green-500" /> },
+  { name: 'Cloudinary', icon: <SiCloudinary className="text-blue-600" /> },
+  { name: 'WordPress', icon: <SiWordpress className="text-blue-400" /> },
 ];
 
 const Skills = () => {

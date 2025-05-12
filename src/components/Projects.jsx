@@ -13,11 +13,11 @@ const projects = [
   },
   {
     title: "Amazon Clone",
-    description: "eCommerce UI using HTML, CSS, JavaScript.",
+    description: "Homepage replica using pure HTML & CSS & JS",
   },
   {
     title: "Fanta Landing",
-    description: "Fanta-styled animated landing page.",
+    description: "Fanta-styled animated landing page using gsap",
   },
   {
     title: "Netflix Clone",
@@ -27,11 +27,24 @@ const projects = [
     title: "Portfolio",
     description: "Personal website using React + TailwindCSS.",
   },
+  {
+    title: "VastraXverse",
+    description: "Full-stack fashion brand website using React, TailwindCSS, and Cloudinary",
+  },
+  {
+    title: "Ghiblimatic",
+    description: "A Studio Ghibli image library built with React and TailwindCSS",
+  },
+  {
+    title: "OceanSwift Logistics",
+    description: "Professional logistics website built with WordPress and Astra.",
+  },
 ];
+
 
 const Projects = () => {
   return (
-    <section className="relative min-h-screen w-full bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] text-white flex flex-col items-center justify-center overflow-hidden font-comic px-4 py-12 sm:px-6">
+    <section id="projects" className="relative min-h-screen w-full bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] text-white flex flex-col items-center justify-center overflow-hidden font-comic px-4 py-12 sm:px-6">
       {/* Section Title */}
       <motion.h2
         className="text-3xl sm:text-4xl md:text-5xl font-bold bangers text-center mb-10 text-red-500 drop-shadow-[4px_4px_0_#000] tracking-widest"
